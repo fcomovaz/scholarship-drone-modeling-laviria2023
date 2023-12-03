@@ -1,0 +1,15 @@
+<mujoco>
+  <worldbody>
+    <light name="top" pos="0 0 1" />
+
+    <!-- aux box at 3 3 3 -->
+    <geom name="aux_box" pos="0 -1.1 1" size="0.01 0.01 0.01" type="box" rgba="0.9 0.9 0.9 0" />
+
+    <!-- create a plane floor -->
+    <geom name="floor" pos="0 0 0" size="1 1 .125" type="plane" rgba="0.9 0.9 0.9 1" />
+
+    <!-- add a ball -->
+    <geom name="ball" pos="0 0 .05" size=".05" type="sphere" rgba="1 0 0 1" />
+
+  </worldbody>
+</mujoco>

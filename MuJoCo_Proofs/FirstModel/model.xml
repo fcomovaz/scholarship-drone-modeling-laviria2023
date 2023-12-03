@@ -1,0 +1,36 @@
+<mujoco model="model">
+	<worldbody>
+		<!-- light -->
+        <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -1"/>
+
+		<!-- plane fixed-->
+		<geom type="plane" size="1 1 0.1" rgba=".9 0 0 1"/>
+		
+		<!-- a body cylinder blue -->
+		<!-- <body name="coso" pos="0 0 2">
+			<joint type="free"/>
+			<geom type="cylinder" size="0.2 0.2" rgba="0 0 0.9 1"/>
+		</body> -->
+
+		<!-- next to the last, a green cylinder fixed -->
+		<!-- center -->
+		<!-- make a box -->
+		<!-- <geom type="box" size="2 0.1 0.1" pos="0 0 0.1" rgba="1 1 1 1" quat="0.924 0.    -0.383 0.   "/> -->
+		<geom type="box" size="2 0.1 0.1" pos="0 0 0.1" rgba="1 1 1 1" euler="0 150 0"/>
+		<!-- x-axis -->
+		<geom type="cylinder" size="0.2 0.1" pos="0.5 0 0.1" rgba=".1 1 .1 1" quat="0.707 0.707 0 0" />
+		<geom type="cylinder" size="0.2 0.1" pos="-0.5 0 0.1" rgba="1 .1 1 1"/>
+		<!-- y-axis -->
+		<geom type="cylinder" size="0.2 0.1" pos="0 0.5 0.1" rgba=".1 1 .1 1" quat="0.707 0 0.707 0"/>
+		<geom type="cylinder" size="0.2 0.1" pos="0 -0.5 0.1" rgba="1 .1 1 1"/>
+
+		<!-- put an sphere on the edge of the box -->
+		<!-- <geom type="sphere" size="0.1" pos="1 0 2" rgba="1 1 1 1"/> -->
+		<body name="balon" pos="1 0 2">
+			<joint type="free"/>
+			<geom type="sphere" size="0.1" rgba="1 1 1 1"/>
+		</body>
+
+	</worldbody>
+</mujoco>
+
